@@ -26,7 +26,7 @@
             {
                 min = i;
 
-                for (int j = i + 1; j < n; j++)
+                for (j = i + 1; j < n; j++)
                 {
                     if ((sortOrder.ToString().ToLower() == "a" && a[j] < a[min]) ||
                         (sortOrder.ToString().ToLower() == "d" && a[j] > a[min]))
