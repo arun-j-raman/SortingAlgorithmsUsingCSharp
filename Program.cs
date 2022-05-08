@@ -4,6 +4,10 @@ namespace SortingAlgorithms
 {
     class Program
     {
+        /// <summary>
+        /// Entry point of the console application that accepts user input and displays results
+        /// </summary>
+        /// <param name="args"></param>
         static void Main(string[] args)
         {
 
@@ -24,6 +28,12 @@ namespace SortingAlgorithms
             Console.WriteLine("\nSort Order: Press 'A' for ascednding order and 'D' for descending order");
 
             char sortOrder = (char)Console.Read();
+
+            if (sortOrder.ToString().ToLower() != "a" && sortOrder.ToString().ToLower() != "d")
+            {
+                Console.WriteLine("\nInvalid sorting order.");
+                return;
+            }
 
             Console.WriteLine("\nBefore Sorting");
 

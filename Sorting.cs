@@ -2,8 +2,17 @@
 {
     public class Sorting
     {
+        /// <summary>
+        /// Global declaration of Iterating variables
+        /// </summary>
         static int i, j;
 
+        /// <summary>
+        /// Method to sort an array of integers using Bubble Sort Technique
+        /// </summary>
+        /// <param name="a">An array of unsorted integers</param>
+        /// <param name="n">The length of the unsorted array of integers</param>
+        /// <param name="sortOrder">Charater representing the order in which the array should be sorted</param>
         public static void BubbleSort(int[] a, int n, char sortOrder)
         {
             for (i = 0; i < n-1; i++)
@@ -17,7 +26,12 @@
             }
         }
 
-
+        /// <summary>
+        /// Method to sort an array of integers using Selection Sort Technique
+        /// </summary>
+        /// <param name="a">An array of unsorted integers</param>
+        /// <param name="n">The length of the unsorted array of integers</param>
+        /// <param name="sortOrder">Charater representing the order in which the array should be sorted</param>
         public static void SelectionSort(int[] a, int n, char sortOrder)
         {
             int min;
