@@ -6,9 +6,9 @@
 
         public static void BubbleSort(int[] a, int n, char sortOrder)
         {
-            for (i = n - 1; i > 0; i--)
+            for (i = 0; i < n-1; i++)
             {
-                for (j = 0; j < i; j++)
+                for (j = 0; j < n-1-i; j++)
                 {
                     if ((sortOrder.ToString().ToLower() == "a" && a[j] > a[j + 1]) ||
                         (sortOrder.ToString().ToLower() == "d" && a[j] < a[j + 1]))
